@@ -19,7 +19,15 @@ brew install --cask soumyasc/tap/keepmeawake
 ```
 
 Both apps are ad-hoc signed rather than notarised, and Homebrew quarantines cask
-downloads by default — so macOS may refuse the first launch. Open the app once
-with **right-click → Open → Open**, or install with `--no-quarantine`.
+downloads by default — so macOS refuses the first launch. Simplest fix is to skip
+the quarantine flag:
+
+```sh
+brew install --cask --no-quarantine soumyasc/tap/clipvault
+```
+
+Already installed? Approve it in **System Settings → Privacy & Security → Open
+Anyway**, or run `xattr -dr com.apple.quarantine /Applications/<App>.app`.
+Control-click → Open stopped working as a bypass in macOS 15 Sequoia.
 
 Casks here are refreshed automatically by each app's own release script.
