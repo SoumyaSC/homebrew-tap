@@ -1,6 +1,6 @@
 cask "keepmeawake" do
-  version "1.3.0"
-  sha256 "8b75a5eafa894a7453bac94e7ef34286441152e96511fcac5a1c00913b5b13b7"
+  version "1.4.0"
+  sha256 "29eac37f433a5f4fbe6f95e90f19fe0c0843f3bf3171a42939ebb280d7ddbc3e"
 
   url "https://github.com/SoumyaSC/KeepMeAwake/releases/download/v#{version}/KeepMeAwake-v#{version}.zip"
   name "KeepMeAwake"
